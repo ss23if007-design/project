@@ -86,10 +86,7 @@ const verifyToken = async (req, res) => {
 const getUser = async (req, res) => {
     try {
 
-        
-        console.log("🔥 req.userID:", req.userID);
-
-        const userId = req.userID;
+        const userId = req.user._id;
 
          if (!userId) {
       return res.status(401).json({ msg: "Unauthorized: No user ID found" });
