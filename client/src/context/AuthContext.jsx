@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect } from "react"; //export nahi kiya
+import { createContext, useState, useEffect } from "react"; 
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const AuthContext = createContext();
@@ -8,11 +8,11 @@ export const AuthProvider = ({ children }) => {
 
     const storeTokenInLS = (serverToken) => {
     setToken(serverToken);
-    return localStorage.setItem("token", serverToken);  
+    localStorage.setItem("token", serverToken);  
   };
 
   let isLoggedIn = !!token;
-  console.log("token",token)
+  console.log("token, token)
   console.log("isLoggedIn",isLoggedIn);
 
 
@@ -23,7 +23,6 @@ export const AuthProvider = ({ children }) => {
     return localStorage.removeItem("token");
   };
 
-  // ✅ Fetch user info if token exists
   useEffect(() => {
     const userAuthentication = async () => {
       if (token) {
@@ -33,7 +32,6 @@ export const AuthProvider = ({ children }) => {
             headers: { Authorization: `Bearer ${token}` }
           });
           if (response.ok) {
-            
             const data = await response.json();
             setUser(data);
             storeTokenInLS(data.token)
