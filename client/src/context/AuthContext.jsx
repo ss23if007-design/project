@@ -8,7 +8,7 @@ export const AuthProvider = ({ children }) => {
 
     const storeTokenInLS = (serverToken) => {
     setToken(serverToken);
-    localStorage.setItem("token", serverToken);  
+    return localStorage.setItem("token", serverToken);  
   };
 
   let isLoggedIn = !!token;
