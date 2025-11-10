@@ -13,7 +13,7 @@ const cors = require("cors");
 const adminRouter = require("./router/admin-router");
 
 const corsOptions = {
-    origin: 'http://localhost:5173',
+    origin: 'https://phoenix-salon-website-server.onrender.com/',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
     optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
