@@ -36,7 +36,6 @@ export const AuthProvider = ({ children }) => {
             
             const data = await response.json();
             setUser(data);
-            console.log(data);
             storeTokenInLS(data.token)
           } 
         } catch (err) {
