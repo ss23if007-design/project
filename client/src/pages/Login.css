@@ -2,8 +2,8 @@
   min-height: 100vh;
   background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   display: flex;
-  align-items: centre;
-  justify-content: centre;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-login {
@@ -20,7 +20,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
-  align-items: centre;
+  align-items: center;
 }
 
 .login-form {
@@ -31,7 +31,7 @@
   font-family: 'Times New Roman', Times, serif;
   color: rgb(164, 202, 250);
   margin-bottom: 12px;
-  text-align: centre;
+  text-align: center;
 }
 
 .login-form label {
@@ -86,7 +86,7 @@
   font-family: "Arial", sans-serif;
   margin-top: 16px;
   font-size: 1rem;
-  text-align: centre;
+  text-align: center;
 }
 
 .login-form a {
