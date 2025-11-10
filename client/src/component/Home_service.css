@@ -1,0 +1,180 @@
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transition: all 0.7s ease;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.service-card-animate {
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+
+.Home_service-section .container:nth-child(1){
+  background-image: url("https://i.pinimg.com/736x/67/cb/7b/67cb7b2e2432088a873e09c7fe61936f.jpg");  
+  background-size: cover ;
+}
+.Home_service-section .container:nth-child(2){
+  background-image: url("https://i.pinimg.com/736x/2c/08/e2/2c08e241888cff49d01925b2fd1dde0c.jpg");  
+  background-size: cover;
+}
+.Home_service-section .container:nth-child(3){
+  background-image: url("https://i.pinimg.com/736x/a3/59/fb/a359fbc6aae5773b9a170c44e2733eb3.jpg");  
+  background-size: cover;
+}
+.Home_service-section .container:nth-child(4){
+  background-image: url("https://i.pinimg.com/736x/46/e2/c5/46e2c5a83f75eb408a790d6b9f033b83.jpg");  
+  background-size: cover;
+}
+.Home_service-section .container:nth-child(5){
+  background-image: url("https://i.pinimg.com/736x/4f/d7/d5/4fd7d53ee90e92c33809d56dcf2475da.jpg");  
+  background-size: cover;
+}
+.Home_service-section .container:nth-child(6){
+  background-image: url("https://i.pinimg.com/1200x/cb/75/e0/cb75e0754c6f8ea3bec0dcd8d3dc20be.jpg");  
+  background-size: cover;
+}
+
+.Button {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+
+}
+
+/* adding actual css */
+
+/* Row layout, cards fill the window */
+.Home_service-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: stretch;
+  justify-content: center;
+  padding: px 0;
+  overflow-x: hidden;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+/* Card: tall, narrow by default, grows on hover/expand */
+.container.accordion-card {
+  flex: 1 1 0;
+  min-width: 200px;
+  max-width: 300px;
+  height: 400px;
+  transition:
+    max-width 0.4s cubic-bezier(0.4,0,0.2,1),
+    min-width 0.4s cubic-bezier(0.4,0,0.2,1),
+    flex-basis 0.4s cubic-bezier(0.4,0,0.2,1),
+    background-position 0.4s cubic-bezier(0.4,0,0.2,1);
+  background-position: left;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+/* Expand on hover or when expanded */
+.container.accordion-card:hover,
+.container.accordion-card.expanded {
+  flex: 2 1 0;
+  min-width: 350px;
+  max-width: 470px;
+  background-position: center;
+  z-index: 30;
+  box-shadow: 0 4px 24px rgba(198, 99, 99, 0.12);
+}
+
+/* Hide description and duration by default */
+
+.container.accordion-card .service-right {
+  opacity: 0%;
+  justify-content: center;
+  align-items: center;
+  color: rgb(226, 187, 88);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  max-height: 0;
+  transition: opacity 0.3s, max-height 0.3s;
+  overflow: hidden;
+  margin: 0;
+}
+.blockk {
+display: flex;
+color: rgb(148, 148, 146);
+justify-self: center;
+gap: 6px;}
+
+.service-right{
+  
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.container.accordion-card .service-left p{
+  text-shadow: 2px 2px 4px rgba(25, 14, 14, 0.9);
+}
+
+/* Show on hover or expand */
+.container.accordion-card:hover .service-left p,
+.container.accordion-card.expanded .service-left p,
+.container.accordion-card:hover .service-right,
+.container.accordion-card.expanded .service-right {
+  display: block;
+  align-items : center;
+  opacity: 1;
+  max-height: 100px;
+  margin: 10px;
+}
+
+
+/* Optional: make content readable over bg */
+.container.accordion-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(7, 6, 6, 0.15);
+  z-index: 0;
+  pointer-events: none;
+  border-radius: inherit;
+}
+.container.accordion-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.service-right{
+   gap: 5px;
+   text-align: center;
+   
+}
+
+.service-infoo{
+  background-color: rgb(44, 42, 38,95%);
+  
+  justify-self: baseline;
+}
+
+.service-left{
+  display:flex;
+  text-align: center;
+  color:rgb(119, 119, 119)
+}
+
+
+
+
+

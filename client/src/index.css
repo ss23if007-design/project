@@ -1,0 +1,145 @@
+
+
+
+/* Global CSS Variables for Colors Matching Login and Registration Forms */
+
+
+
+:root {
+  /* Login Form Colors (Blues) */
+  --login-bg-gradient: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  --login-heading-color: rgb(164, 202, 250);
+  --login-label-color: #6d92bd;
+  --login-input-focus: #315ab1;
+  --login-btn-bg: #315ab1;
+  --login-btn-hover: #3654b7;
+  --login-link-color: #8aa8ea;
+
+  /* Registration Form Colors (Pinks/Reds) */
+  --register-bg-gradient: linear-gradient(120deg, #d9adad 0%, #ffdada 100%);
+  --register-heading-color: #da8686;
+  --register-label-color: #d69695;
+  --register-input-focus: #dbb9be;
+  --register-btn-bg: #ecabae;
+  --register-btn-hover: #d18695;
+  --register-link-color: #d5a2a2;
+}
+
+
+
+/* Body Styles */
+body {
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Urbanist, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+}
+
+.Button {
+    margin: 10px;
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+    background: linear-gradient(to right, #77530a, #ffd277, #77530a, #77530a, #ffd277, #77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #000000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.Button::before {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    position: absolute;
+    content: "Explore";
+    color: #dbb741;
+    inset: 2px;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.Button span {
+    z-index: 1;
+    display: block;
+}
+
+.Button:hover {
+    background-position: right;
+    transition-duration: 1s;
+}
+
+.Button:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+}
+
+.Button:active {
+    transform: scale(0.95);
+}
+
+/*** disabled style ***/
+.Button:disabled {
+    pointer-events: none;
+    opacity: .65;
+    color: #7e7e7e;
+    background: #dcdcdc;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.big{
+
+  display:flex;
+  justify-content: center;
+}
+
+.Our-services{
+
+  display:flex;
+  width: 300px;
+  font-size: 3rem;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.line {
+  background: linear-gradient(to right, #77530a, #ffd277, #77530a, #77530a, #ffd277, #77530a);
+  height: 2px;
+  width : 30px;
+ ;
+}
+.head{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.Feedback-section{
+  background-color: #242424;
+
+}

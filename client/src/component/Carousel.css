@@ -1,0 +1,39 @@
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.card {
+  width: 200px;
+  height: 130px;
+  
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #333;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+/* Hover effect — enlarge card */
+.card:hover {
+  transform: scale(1.4);
+  z-index: 5;
+}
+
+/* Dim and shrink others when one is hovered */
+.carousel:hover .card:not(:hover) {
+  opacity: 0.7;
+  transform: scale(0.9);
+}
+
+.card-image{
+  width:130px
+}
+

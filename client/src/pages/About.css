@@ -1,0 +1,233 @@
+.hero {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff9f2;
+  min-height: 100vh;
+  padding: 10px 80px;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  color: #333;
+}
+
+.navbar nav a {
+  margin-left: 30px;
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.text-section {
+  width: 50%;
+}
+
+.text-section h1 {
+  display: flex;
+  justify-content: left;
+  font-size: 2rem;
+  color: #222;
+}
+
+.text-section span {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  color: #f9a11c;
+}
+
+.text-section p {
+  margin-top: 20px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 25px;
+  background-color: #241908;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.image-section {
+  width: 40%;
+  position: relative;
+}
+
+.image-section img {
+  width: 100%;
+  border-radius: 10px;
+  z-index: 2;
+  position: relative;
+}
+.line{
+  margin-top: 50px;
+  width: 100%;
+}
+S
+
+.tag {
+  position: absolute;
+  background-color: #ffb300;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.birth {
+  top: 10%;
+  left: -30%;
+}
+
+.country {
+  top: 40%;
+  left: -25%;
+}
+
+.contact-card {
+  position: absolute;
+  bottom: -20%;
+  left: 10%;
+  background-color: #1c1c1c;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.contact-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.contact-card p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+  }
+  .text-section,
+  .image-section {
+    width: 100%;
+  }
+  .image-section {
+    margin-top: 50px;
+  }
+}
+
+
+
+/* --- Global Reset and Layout --- */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px; /* Set a height for context */
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 80%; /* Width of the visible carousel area */
+    height: 100%;
+}
+
+/* --- Card Base Styling --- */
+.carousel-card {
+    position: absolute; /* Position cards for overlapping/transform effect */
+    border-radius: 12px;
+    border: 3px solid #20c997; /* Your turquoise border color */
+    background-color: #e6fffa; /* Your light cyan background color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out; /* Smooth transitions for movement */
+    opacity: 1;
+}
+
+.card-inner-box {
+    padding: 15px;
+    text-align: center;
+}
+
+/* --- Specific Card Sizing and Positioning (The 3D Look) --- */
+
+/* Center Card (Largest and most prominent) */
+.card-2 {
+    width: 600px;
+    height: 300px;
+    z-index: 10; /* Bring to front */
+    transform: scale(1); /* Full size */
+}
+
+/* Left Card (Smaller and pushed left) */
+.card-1 {
+    width: 400px;
+    height: 220px;
+    z-index: 5; /* Behind the center card */
+    transform: translateX(-40%) scale(0.85); /* Move left and shrink */
+    opacity: 0.8;
+}
+
+/* Right Card (Smaller and pushed right) */
+.card-3 {
+    width: 400px;
+    height: 220px;
+    z-index: 5; /* Behind the center card */
+    transform: translateX(40%) scale(0.85); /* Move right and shrink */
+    opacity: 0.8;
+}
+
+/* --- Navigation Arrows Styling --- */
+.nav-arrow {
+    background: none;
+    border: none;
+    font-size: 3rem;
+    color: #20c997; /* Matching the border color */
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    z-index: 20; /* Keep arrows above cards */
+}
+
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
+}
+
+.Certificate{
+    color: #1c1c1c;
+    display:flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 2rem;
+}

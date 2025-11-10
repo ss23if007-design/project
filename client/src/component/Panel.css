@@ -1,0 +1,144 @@
+/* 🌸 Trigger Button (opens the panel) */
+.trigger-btn {
+  
+  text-decoration: none;
+  width: fit-content;
+  color: #cfa76e;
+  border: 1px solid #cfa76e;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: 0.3s ease;
+  background: transparent;
+  cursor: pointer;
+}
+
+.trigger-btn:hover {
+  background-color: #cfa76e;
+  color: #000;
+}
+
+/* 🌸 Main Panel Container */
+.panel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 500px;
+  max-width: 95%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(70, 79, 84, 0.2);
+  z-index: 9999;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* 🌸 Panel Header */
+.panel-header {
+  display: flex;
+  height:50px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #770707;
+  font-family: poppins, sans-serif;
+  color: white;
+  padding: 10px 15px;
+
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* 🌸 Header Text */
+.head {
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* 🌸 Header Buttons */
+.min-btn,
+.close-btn {
+  font-size: 12px;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.min-btn:hover,
+.close-btn:hover {
+  color: #cfa76e;
+}
+
+/* 🌸 Panel Body */
+.panel-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #333;
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+/* 🌸 Restore Button (when minimized) */
+.restore-btn {
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+  width: 250px;
+  height: 50px;
+  font-family: poppins, sans-serif;
+  color: #401f03;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.restore-btn:hover {
+  background-color: #cfa76e;
+  color: #000;
+}
+
+/* 🌸 Minimized Panel State */
+.minimized {
+  position: fixed;
+  width: 250px;
+  bottom: 20px;
+  left: 8%;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  display: fixed;
+  
+  
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.minimized .panel-body,
+.minimized .panel-header {
+  display: none;
+}
+
+.minimized:hover {
+ width:270px;
+ 
+}
+
+/* 🌸 Centering Block */
+.Block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width : 30%;
+}

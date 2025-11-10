@@ -1,0 +1,127 @@
+
+
+/* Banner Section Layout */
+.Text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  width: 50%;
+  height: 100vh;
+  padding: 0 5rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.imgs-section {
+  position: relative;
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.imgs-section img:first-child {
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(90%);
+}
+
+.imgs-section img:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0.4;
+}
+
+/* Page Split */
+.Banner {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+/* Logo Text */
+.Salon-Name {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.Phoenix {
+  font-family: poppins, sans-serif;
+  font-size: 6rem;
+  color: #cfa76e; /* Gold tone */
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.beauty-salon {
+  font-family: "Yatra One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 400;
+  margin: -1rem 0 0 1rem;
+}
+
+/* Description text */
+.Description {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #ddd;
+  letter-spacing: 0.5px;
+  width: 80%;
+  position: relative;
+}
+
+/* 🌟 Vertical line beside description */
+.Description::after {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: 10%;
+  width: 2px;
+  height: 80%;
+  background-color: #cfa76e;
+  border-radius: 5px;
+}
+
+/* Panel button container */
+.Panel {
+  margin-top: 2rem;
+}
+
+
+
+
+
+/* Responsiveness */
+@media (max-width: 900px) {
+  section {
+    flex-direction: column;
+  }
+
+  .Text-section, .imgs-section {
+    width: 100%;
+    height: auto;
+    padding: 3rem 2rem;
+  }
+
+  .Phoenix {
+    font-size: 4rem;
+  }
+
+  .beauty {
+    font-size: 2.2rem;
+  }
+
+  .Description::after {
+    display: none; /* hide vertical line on small screens */
+  }
+}

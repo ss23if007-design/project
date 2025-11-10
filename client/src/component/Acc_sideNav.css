@@ -1,0 +1,31 @@
+.Container{
+    width: 18%;
+    min-height: 100vh;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 1fr 2fr;
+    background-color: antiquewhite;
+    
+}
+
+
+
+.side-nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* optional: adds space between items */
+    padding: 0;
+    margin-top: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+.side-nav ul li {
+    margin: 10px;
+    
+}
+.side-nav a {
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}

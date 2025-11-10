@@ -1,0 +1,135 @@
+.multi-select {
+width: 100%;
+font-family: Arial, sans-serif;
+}
+
+.Block{
+  width: 100%;
+}
+
+/* Main input box */
+.select-box {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+
+  border-radius: 8px;
+  background: #171515;
+  margin: 0 auto;
+  min-height: 38px;
+  padding: 0px 12px;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(255, 228, 228, 0.04);
+  transition: border 0.2s;
+}
+
+.select-box:focus-within {
+  border-color: #abacab;
+}
+
+.placeholder {
+  color: #888;
+  flex-grow: 1;
+  font-size: 15px;
+}
+
+/* Chips */
+.chip {
+  display: flex;
+  align-items: center;
+  background: #4a5a3c;
+  color: #d5d3d2;
+  border-radius: 16px;
+  padding: 4px 10px;
+  margin: 2px 0;
+  font-size: 13px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #888;
+  margin-left: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 2px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.remove-btn:hover {
+  
+  color: #4a5a3c;
+}
+
+.chip-count {
+  background: #4a5a3c;
+  color: #fff;
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 13px;
+  margin-left: 4px;
+}
+
+.arrow {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #292828;
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+  box-shadow: 0 4px 16px rgba(174, 155, 61, 0.08);
+  overflow: hidden;
+  
+  animation: fadeIn 0.2s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.search-box {
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  border-bottom: 1px solid #0a0b0c;
+  outline: none;
+  font-size: 15px;
+  background: #f7f7f7;
+  border-radius: 8px 8px 0 0;
+}
+
+.options-list {
+  max-height: 180px;
+  overflow-y: scroll;
+  padding: 8px 0;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.option:hover {
+  background: #5d5d5b;
+}
+
+.option input[type="checkbox"] {
+  accent-color: #5c5c5c;
+  margin-right: 8px;
+}

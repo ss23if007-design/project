@@ -1,0 +1,138 @@
+.register {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #d9adad 0%, #ffdada 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-registration {
+
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  padding: 40px 32px;
+ 
+  max-width: 900px;
+  margin-top :10%;
+  margin-bottom :10%;
+}
+
+@media (max-width: 767px) {
+  section.register img {
+    display: none;
+  }
+}
+
+.container.grid.grid-two-cols {
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  padding: 0px 5px;
+  
+}
+h1 {
+  font-size: 3.4rem;
+  color: #da8686;
+  margin-bottom: 12px;
+  text-align: center;
+  text-shadow: #e4d2d2 1px 2px 3px;
+}
+
+.registration-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0; /* Already handled in media query */
+}
+
+.registration-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(19, 33, 231, 0.08);
+  object-fit: cover;
+}
+
+.registration-form {
+  margin-right: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Label {
+  margin-bottom: 22px;
+}
+
+.Label label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  color: #d69695;
+}
+
+.Label input {
+  width: 300px;
+  padding: 10px 14px;
+  color: #6d0c0c;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background: #f9f9f9;
+  transition: border 0.2s;
+}
+
+.Label input:focus {
+  border-color: #dbb9be;
+  outline: none;
+}
+
+.btn.btn-submit {
+  background: #ecabae;
+  color: #fff;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.btn.btn-submit:hover {
+  background: #d18695;
+}
+
+form p {
+  font-family: "Arial", sans-serif;
+  color: grey;
+  margin-top: 16px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+form a {
+  color: #d5a2a2;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1000px) {
+  .container.grid.grid-two-cols {
+    grid-template-columns: 1fr;
+    min-width: 300px;
+    gap: 0;
+    padding-bottom: 5%;
+  }
+  .registration-image {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+ 
+}
+
