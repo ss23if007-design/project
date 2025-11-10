@@ -2,8 +2,8 @@
   min-height: 100vh;
   background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: centre;
+  justify-content: centre;
 }
 
 .section-login {
@@ -20,7 +20,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
-  align-items: center;
+  align-items: centre;
 }
 
 .login-form {
@@ -31,7 +31,7 @@
   font-family: 'Times New Roman', Times, serif;
   color: rgb(164, 202, 250);
   margin-bottom: 12px;
-  text-align: center;
+  text-align: centre;
 }
 
 .login-form label {
@@ -57,7 +57,7 @@
 
 }
 
-.login-form input:focus {
+.login-form input: focus {
   border-color: #315ab1;
   outline: none;
 }
@@ -72,21 +72,21 @@
   border-radius: 8px;
   font-size: 1.1rem;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: 0.2s;
   margin-top: 10px;
   width: 100%;
 }
 
-.btn.btn-primary:hover {
+.btn.btn-primary: hover {
   background: #3654b7;
-  color: aliceblue;
+  colour: aliceblue;
 }
 
 .login-form p {
   font-family: "Arial", sans-serif;
   margin-top: 16px;
   font-size: 1rem;
-  text-align: center;
+  text-align: centre;
 }
 
 .login-form a {
